@@ -45,57 +45,57 @@ GAR, KEM, KET, MER,  ASA, TER, KEC, MIC, SAJ, SAO, BUJ = st.tabs([
     "Saos Tomat",
     "Bumbu Jadi"])
 
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstonePPK_Garam.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstonePPK_Garam.csv'
 df = pd.read_csv(
     df_path
     )
 GAR.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kemiri.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kemiri.csv'
 df = pd.read_csv(
     df_path
     )
 KEM.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstonePPK_KetumbarJinten.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstonePPK_KetumbarJinten.csv'
 df = pd.read_csv(
     df_path
     )
 KET.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_MericaLada.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_MericaLada.csv'
 df = pd.read_csv(
     df_path
     )
 MER.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstonePPK_Asam.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstonePPK_Asam.csv'
 df = pd.read_csv(
     df_path
     )
 ASA.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Terasi.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Terasi.csv'
 df = pd.read_csv(
     df_path
     )
 TER.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kecap.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kecap.csv'
 df = pd.read_csv(
     df_path
     )
 KEC.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Micin.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Micin.csv'
 df = pd.read_csv(
     df_path
     )
 MIC.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SambalJadi.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SambalJadi.csv'
 df = pd.read_csv(
     df_path
     )
 SAJ.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SaosTomat.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SaosTomat.csv'
 df = pd.read_csv(
     df_path
     )
 SAO.write(df)
-df_path = r'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_BumbuJadi.csv'
+df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_BumbuJadi.csv'
 df = pd.read_csv(
     df_path
     )
@@ -129,7 +129,7 @@ option = st.selectbox(
 #col1, col2, col3, col4 = st.columns(4)
 
 if option == "Garam":
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Garam.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Garam.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -155,7 +155,7 @@ if option == "Garam":
     pass
 
 elif option == 'Kemiri':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kemiri.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kemiri.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -181,7 +181,7 @@ elif option == 'Kemiri':
     pass
 
 elif option == 'Ketumbar':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_KetumbarJinten.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_KetumbarJinten.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -207,7 +207,7 @@ elif option == 'Ketumbar':
     pass
 
 elif option == 'Merica':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_MericaLada.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_MericaLada.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -234,7 +234,7 @@ elif option == 'Merica':
 
 elif option == 'Asam':
     # Load the data
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Asam.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Asam.csv")
 
     # Define keyword
     keyword = "Jakarta"
@@ -260,7 +260,7 @@ elif option == 'Asam':
     chart
 
 elif option == 'Terasi':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Terasi.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Terasi.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -286,7 +286,7 @@ elif option == 'Terasi':
     pass
 
 elif option == 'Kecap':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kecap.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Kecap.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -312,7 +312,7 @@ elif option == 'Kecap':
     pass
 
 elif option == 'Micin':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Micin.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_Micin.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -338,7 +338,7 @@ elif option == 'Micin':
     pass
 
 elif option == 'Sambal Jadi':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SambalJadi.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SambalJadi.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -364,7 +364,7 @@ elif option == 'Sambal Jadi':
     pass
 
 elif option == 'Saos Tomat':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SaosTomat.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_SaosTomat.csv")
     # Define keyword
     keyword = "Jakarta"
 
@@ -390,7 +390,7 @@ elif option == 'Saos Tomat':
     pass
 
 elif option == 'Bumbu Jadi':
-    df = pd.read_csv(r"https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_BumbuJadi.csv")
+    df = pd.read_csv("https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/tree/main/DatasetProjectCapstone/PPK_BumbuJadi.csv")
     # Define keyword
     keyword = "Jakarta"
 
