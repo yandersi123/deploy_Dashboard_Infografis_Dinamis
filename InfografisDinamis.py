@@ -130,178 +130,289 @@ option = st.selectbox(
 
 if option == "Garam":
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_Garam.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Garam"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Kemiri':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_Kemiri.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Kemiri"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Ketumbar':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_KetumbarJinten.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Ketumbar"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Merica':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_MericaLada.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Merica / Lada"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Asam':
+    # Load the data
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_Asam.csv")
+
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Asam"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
-    pass
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
 
 elif option == 'Terasi':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_Terasi.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Terasi"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Kecap':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_Kecap.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = 'Pengeluaran per Kapita untuk Kecap'
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Micin':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_Micin.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Micin"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Sambal Jadi':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_SambalJadi.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Sambal Jadi"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Saos Tomat':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_SaosTomat.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Saos Tomat"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 elif option == 'Bumbu Jadi':
     df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone\PPK_BumbuJadi.csv")
+    # Define keyword
     keyword = "Jakarta"
+
+    # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)]
-    
-    # Buat line chart dengan Plotly
-    fig = go.Figure()
 
-    for index, row in filtered_df.iterrows():
-        fig.add_trace(go.Scatter(x=filtered_df.columns[1:], y=row[1:], mode='lines+markers', name=row['Kabupaten/Kota']))
+    # Melt the DataFrame to make it tidy for Altair
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
 
-    titl = "Pengeluaran per Kapita untuk Bumbu Jadi"
-    fig.update_layout(title=titl, xaxis_title='Tahun', yaxis_title='Pengeluaran (Rp/Kapita)')
-    st.plotly_chart(fig)
+    # Create the Altair chart with custom width and height
+    chart = alt.Chart(melted_df).mark_line(point=True).encode(
+        x='Tahun:T',
+        y='Pengeluaran:Q',
+        color='Kabupaten/Kota:N',
+        tooltip=['Tahun:T', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
+    ).properties(
+        width=1300,  # Set width to 1500 pixels
+        height=450,  # Set height to 400 pixels
+        title="Pengeluaran per Kapita untuk Asam"
+    ).interactive()
+
+    chart
     pass
 
 else:
