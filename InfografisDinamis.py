@@ -7,17 +7,11 @@ import numpy as np
 
 st.set_page_config(layout="wide")
 
-st.title(
-    "Analisis Pengeluaran Masyarakat per Kapita Berdasarkan Bumbu Masak di Provinsi DKI Jakarta 2018-2023"
-    )
+st.title("Analisis Pengeluaran Masyarakat per Kapita Berdasarkan Bumbu Masak di Provinsi DKI Jakarta 2018-2023")
 
-st.caption(
-    "by : [Prayander Sahatma Siahaan](www.linkedin.com/in/prayander-sahatma-siahaan-a481411b6)"
-    )
+st.caption("by : [Prayander Sahatma Siahaan](www.linkedin.com/in/prayander-sahatma-siahaan-a481411b6)")
 
-st.header(
-    "1. Pendahuluan."
-    )
+st.header("1. Pendahuluan.")
 
 '''
 Ketergantungan masyarakat pada bumbu masak erat terkait dengan pengeluaran per kapita. Bumbu tidak hanya bahan tambahan, 
@@ -32,18 +26,7 @@ st.header('Dataset Penelitian.')
 Digunakan dataset yang menjelaskan Pengeluaran per kapita masyarakat Indonesia dalam periode 2018-2023 berdasarkan jenis bahan makanan.
 Berikut merupakan tabel dataset yang akan digunakan :
 '''
-GAR, KEM, KET, MER,  ASA, TER, KEC, MIC, SAJ, SAO, BUJ = st.tabs([
-    "Garam", 
-    "Kemiri", 
-    "Ketumbar",
-    "Merica",
-    "Asam",
-    "Terasi",
-    "Kecap",
-    "Micin",
-    "Sambal Jadi",
-    "Saos Tomat",
-    "Bumbu Jadi"])
+GAR, KEM, KET, MER,  ASA, TER, KEC, MIC, SAJ, SAO, BUJ = st.tabs(["Garam", "Kemiri", "Ketumbar","Merica","Asam","Terasi","Kecap","Micin","Sambal Jadi","Saos Tomat","Bumbu Jadi"])
 
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Garam.csv'
 df = pd.read_csv(df_path)
@@ -89,31 +72,11 @@ df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/bl
 df = pd.read_csv(df_path)
 BUJ.write(df)
 
-st.caption(
-    'Sumber Data : [Badan Pusat Statistik Indonesia.](https://www.bps.go.id/id/statistics-table/2/MjEyMiMy/rata-rata-pengeluaran-perkapita-seminggu--menurut-kelompok-bumbu-bumbuan-per-kabupaten-kota--rupiah-kapita-minggu-.html)'
-    )
+st.caption('Sumber Data : [Badan Pusat Statistik Indonesia.](https://www.bps.go.id/id/statistics-table/2/MjEyMiMy/rata-rata-pengeluaran-perkapita-seminggu--menurut-kelompok-bumbu-bumbuan-per-kabupaten-kota--rupiah-kapita-minggu-.html)')
 
-st.header(
-    "2. Visualisasi Data."
-    )
-st.subheader(
-    "2.1. Trend Bumbu Masak setiap kota di Provinsi DKI Jakarta "
-)
-option = st.selectbox(
-    'Pilih Bumbu Masak :',
-    (
-        "Garam", 
-        "Kemiri", 
-        "Ketumbar",
-        "Merica",
-        "Asam",
-        "Terasi",
-        "Kecap",
-        "Micin",
-        "Sambal Jadi",
-        "Saos Tomat",
-        "Bumbu Jadi" 
-        ))
+st.header("2. Visualisasi Data.")
+st.subheader("2.1. Trend Bumbu Masak setiap kota di Provinsi DKI Jakarta ")
+option = st.selectbox('Pilih Bumbu Masak :',("Garam", "Kemiri", "Ketumbar","Merica","Asam","Terasi","Kecap","Micin","Sambal Jadi","Saos Tomat","Bumbu Jadi" ))
 
 #col1, col2, col3, col4 = st.columns(4)
 
