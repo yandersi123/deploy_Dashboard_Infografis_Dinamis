@@ -46,59 +46,47 @@ GAR, KEM, KET, MER,  ASA, TER, KEC, MIC, SAJ, SAO, BUJ = st.tabs([
     "Bumbu Jadi"])
 
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Garam.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 GAR.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Kemiri.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 KEM.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_KetumbarJinten.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 KET.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_MericaLada.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 MER.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Asam.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 ASA.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Terasi.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 TER.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Kecap.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 KEC.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_Micin.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 MIC.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_SambalJadi.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 SAJ.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_SaosTomat.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 SAO.write(df)
+
 df_path = 'https://github.com/yandersi123/deploy_Dashboard_Infografis_Dinamis/blob/f7e8cf6b488e09e3e974f652753c4f18d135b07d/DatasetProjectCapstone/PPK_BumbuJadi.csv'
-df = pd.read_csv(
-    df_path
-    )
+df = pd.read_csv(df_path)
 BUJ.write(df)
 
 st.caption(
