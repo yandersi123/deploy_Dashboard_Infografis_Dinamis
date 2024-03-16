@@ -28,47 +28,47 @@ Berikut merupakan tabel dataset yang akan digunakan :
 '''
 GAR, KEM, KET, MER,  ASA, TER, KEC, MIC, SAJ, SAO, BUJ = st.tabs(["Garam", "Kemiri", "Ketumbar","Merica","Asam","Terasi","Kecap","Micin","Sambal Jadi","Saos Tomat","Bumbu Jadi"])
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Garam.csv'
+df_path = 'DatasetProjectCapstone/PPK_Garam.csv'
 df = pd.read_csv(df_path)
 GAR.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kemiri.csv'
+df_path = 'DatasetProjectCapstone/PPK_Kemiri.csv'
 df = pd.read_csv(df_path)
 KEM.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_KetumbarJinten.csv'
+df_path = 'DatasetProjectCapstone/PPK_KetumbarJinten.csv'
 df = pd.read_csv(df_path)
 KET.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstonePPK_MericaLada.csv'
+df_path = 'DatasetProjectCapstone/PPK_MericaLada.csv'
 df = pd.read_csv(df_path)
 MER.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstonePPK_Asam.csv'
+df_path = 'DatasetProjectCapstone/PPK_Asam.csv'
 df = pd.read_csv(df_path)
 ASA.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstonePPK_Terasi.csv'
+df_path = 'DatasetProjectCapstone/PPK_Terasi.csv'
 df = pd.read_csv(df_path)
 TER.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kecap.csv'
+df_path = 'DatasetProjectCapstone/PPK_Kecap.csv'
 df = pd.read_csv(df_path)
 KEC.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Micin.csv'
+df_path = 'DatasetProjectCapstone/PPK_Micin.csv'
 df = pd.read_csv(df_path)
 MIC.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SambalJadi.csv'
+df_path = 'DatasetProjectCapstone/PPK_SambalJadi.csv'
 df = pd.read_csv(df_path)
 SAJ.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SaosTomat.csv'
+df_path = 'DatasetProjectCapstone/PPK_SaosTomat.csv'
 df = pd.read_csv(df_path)
 SAO.write(df)
 
-df_path = r'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_BumbuJadi.csv'
+df_path = 'DatasetProjectCapstone/PPK_BumbuJadi.csv'
 df = pd.read_csv(df_path)
 BUJ.write(df)
 
@@ -87,7 +87,7 @@ pangan dan kesejahteraan masyarakat.
 '''
 col1, col2, col3 = st.columns(3)
 with col2:
-    st.image(r'ProjectCapstoneDesign/Images/Peta_DKIJakarta.png', 
+    st.image('Images/Peta_DKIJakarta.png', 
          caption='Peta Kota di Provinsi DKI Jakarta',
          width=450)
 st.header("2. Visualisasi Data.")
@@ -100,7 +100,7 @@ val_height = 450
 
 if option1 == "Garam":
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Garam.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_Garam.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -125,7 +125,7 @@ if option1 == "Garam":
 
 elif option1 == 'Kemiri':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kemiri.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_Kemiri.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -150,7 +150,7 @@ elif option1 == 'Kemiri':
 
 elif option1 == 'Ketumbar':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_KetumbarJinten.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_KetumbarJinten.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -175,7 +175,7 @@ elif option1 == 'Ketumbar':
 
 elif option1 == 'Merica':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_MericaLada.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_MericaLada.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -200,7 +200,7 @@ elif option1 == 'Merica':
 
 elif option1 == 'Asam':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Asam.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_Asam.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -225,7 +225,7 @@ elif option1 == 'Asam':
 
 elif option1 == 'Terasi':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Terasi.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_Terasi.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -250,7 +250,7 @@ elif option1 == 'Terasi':
 
 elif option1 == 'Kecap':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kecap.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_Kecap.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -275,7 +275,7 @@ elif option1 == 'Kecap':
 
 elif option1 == 'Micin':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Micin.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_Micin.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -300,7 +300,7 @@ elif option1 == 'Micin':
 
 elif option1 == 'Sambal Jadi':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SambalJadi.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_SambalJadi.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -325,7 +325,7 @@ elif option1 == 'Sambal Jadi':
 
 elif option1 == 'Saos Tomat':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SaosTomat.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_SaosTomat.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -350,7 +350,7 @@ elif option1 == 'Saos Tomat':
 
 elif option1 == 'Bumbu Jadi':
     # Load data
-    df = pd.read_csv(r"ProjectCapstoneDesign/DatasetProjectCapstone/PPK_BumbuJadi.csv")
+    df = pd.read_csv("DatasetProjectCapstone/PPK_BumbuJadi.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
