@@ -28,47 +28,47 @@ Berikut merupakan tabel dataset yang akan digunakan :
 '''
 GAR, KEM, KET, MER,  ASA, TER, KEC, MIC, SAJ, SAO, BUJ = st.tabs(["Garam", "Kemiri", "Ketumbar","Merica","Asam","Terasi","Kecap","Micin","Sambal Jadi","Saos Tomat","Bumbu Jadi"])
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Garam.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Garam.csv'
 df = pd.read_csv(df_path)
 GAR.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Kemiri.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kemiri.csv'
 df = pd.read_csv(df_path)
 KEM.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_KetumbarJinten.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_KetumbarJinten.csv'
 df = pd.read_csv(df_path)
 KET.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_MericaLada.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstonePPK_MericaLada.csv'
 df = pd.read_csv(df_path)
 MER.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Asam.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstonePPK_Asam.csv'
 df = pd.read_csv(df_path)
 ASA.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Terasi.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstonePPK_Terasi.csv'
 df = pd.read_csv(df_path)
 TER.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone//PPK_Kecap.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kecap.csv'
 df = pd.read_csv(df_path)
 KEC.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Micin.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Micin.csv'
 df = pd.read_csv(df_path)
 MIC.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_SambalJadi.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SambalJadi.csv'
 df = pd.read_csv(df_path)
 SAJ.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_SaosTomat.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SaosTomat.csv'
 df = pd.read_csv(df_path)
 SAO.write(df)
 
-df_path = r'C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_BumbuJadi.csv'
+df_path = 'ProjectCapstoneDesign/DatasetProjectCapstone/PPK_BumbuJadi.csv'
 df = pd.read_csv(df_path)
 BUJ.write(df)
 
@@ -87,6 +87,6 @@ pangan dan kesejahteraan masyarakat.
 '''
 col1, col2, col3 = st.columns(3)
 with col2:
-    st.image('Images/Peta_DKIJakarta.png', 
+    st.image('ProjectCapstoneDesign/Images/Peta_DKIJakarta.png', 
          caption='Peta Kota di Provinsi DKI Jakarta',
          width=450)
