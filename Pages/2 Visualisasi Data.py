@@ -13,7 +13,7 @@ val_height = 450
 
 if option1 == "Garam":
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Garam.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Garam.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -38,7 +38,7 @@ if option1 == "Garam":
 
 elif option1 == 'Kemiri':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Kemiri.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kemiri.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -63,7 +63,7 @@ elif option1 == 'Kemiri':
 
 elif option1 == 'Ketumbar':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_KetumbarJinten.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_KetumbarJinten.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -88,7 +88,7 @@ elif option1 == 'Ketumbar':
 
 elif option1 == 'Merica':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_MericaLada.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_MericaLada.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -113,7 +113,7 @@ elif option1 == 'Merica':
 
 elif option1 == 'Asam':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Asam.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Asam.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -138,7 +138,7 @@ elif option1 == 'Asam':
 
 elif option1 == 'Terasi':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Terasi.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Terasi.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -163,7 +163,7 @@ elif option1 == 'Terasi':
 
 elif option1 == 'Kecap':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Kecap.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Kecap.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -188,7 +188,7 @@ elif option1 == 'Kecap':
 
 elif option1 == 'Micin':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_Micin.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_Micin.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -213,7 +213,7 @@ elif option1 == 'Micin':
 
 elif option1 == 'Sambal Jadi':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_SambalJadi.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SambalJadi.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -238,7 +238,7 @@ elif option1 == 'Sambal Jadi':
 
 elif option1 == 'Saos Tomat':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_SaosTomat.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_SaosTomat.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
@@ -263,7 +263,7 @@ elif option1 == 'Saos Tomat':
 
 elif option1 == 'Bumbu Jadi':
     # Load data
-    df = pd.read_csv(r"C:\Users\siaha\Documents\TETRIS 4\ProjectCapstoneDesign\DatasetProjectCapstone/PPK_BumbuJadi.csv")
+    df = pd.read_csv("ProjectCapstoneDesign/DatasetProjectCapstone/PPK_BumbuJadi.csv")
     # Define keyword
     keyword = "Jakarta"
     keyword2 = "Seribu"
