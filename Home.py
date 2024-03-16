@@ -117,7 +117,7 @@ if option1 == "Garam":
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -142,7 +142,7 @@ elif option1 == 'Kemiri':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -167,7 +167,7 @@ elif option1 == 'Ketumbar':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -192,7 +192,7 @@ elif option1 == 'Merica':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -217,7 +217,7 @@ elif option1 == 'Asam':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -242,7 +242,7 @@ elif option1 == 'Terasi':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -267,7 +267,7 @@ elif option1 == 'Kecap':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -292,7 +292,7 @@ elif option1 == 'Micin':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -317,7 +317,7 @@ elif option1 == 'Sambal Jadi':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -342,7 +342,7 @@ elif option1 == 'Saos Tomat':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
@@ -367,7 +367,7 @@ elif option1 == 'Bumbu Jadi':
     ).properties(
         width=val_width,
         height = val_height,
-        title="Pengeluaran per Kapita untuk " + keyword
+        title="Pengeluaran per Kapita untuk " + option1
     ).interactive()
     # Render the chart
     st.write(chart)
