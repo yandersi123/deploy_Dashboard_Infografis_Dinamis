@@ -132,11 +132,11 @@ elif option1 == 'Kemiri':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -157,11 +157,11 @@ elif option1 == 'Ketumbar':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -182,11 +182,11 @@ elif option1 == 'Merica':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -207,11 +207,11 @@ elif option1 == 'Asam':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -232,11 +232,11 @@ elif option1 == 'Terasi':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -257,11 +257,11 @@ elif option1 == 'Kecap':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -282,11 +282,11 @@ elif option1 == 'Micin':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -307,11 +307,11 @@ elif option1 == 'Sambal Jadi':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -332,11 +332,11 @@ elif option1 == 'Saos Tomat':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
@@ -357,11 +357,11 @@ elif option1 == 'Bumbu Jadi':
     # Filter the DataFrame
     filtered_df = df[df['Kabupaten/Kota'].str.contains(keyword, case=False)| df['Kabupaten/Kota'].str.contains(keyword2, case=False)]
     # Melt the DataFrame to make it tidy for Altair
-    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran')
+    melted_df = pd.melt(filtered_df, id_vars=['Kabupaten/Kota'], var_name='Tahun', value_name='Pengeluaran (Rp/Kapita)')
     # Create the Altair chart
     chart = alt.Chart(melted_df).mark_bar().encode(
         x='Tahun:N',
-        y='Pengeluaran:Q',
+        y='Pengeluaran (Rp/Kapita):Q',
         color='Kabupaten/Kota:N',
         tooltip=['Tahun:N', 'Pengeluaran:Q', 'Kabupaten/Kota:N']
     ).properties(
